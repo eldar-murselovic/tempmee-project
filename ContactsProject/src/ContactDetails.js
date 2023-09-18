@@ -17,6 +17,8 @@ export default function ContactDetails() {
         <Text style={[appStyles.value, appStyles.phone]}>{contactDetails.phoneNumbers[0].number}</Text>
         <Text style={appStyles.label}>Email address:</Text>
         <Text style={[appStyles.value, appStyles.email]}>{contactDetails.emails ? contactDetails.emails[0]?.email : "No email"}</Text>
+        <Text style={appStyles.label}>Favorite contact:</Text>
+        <Text style={[appStyles.value]}>{contactDetails.favorite ? 'YES' : 'NO'}</Text>
       </ScrollView>
     );
   }
